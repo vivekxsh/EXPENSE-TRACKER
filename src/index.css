@@ -1,0 +1,76 @@
+@import "~antd/dist/antd.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Add your custom styles below */
+
+:root {
+  --theme: #2970ff;
+}
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input {
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+/* Mobile CSS starts */
+@media (max-width: 768px) {
+  body {
+    padding: 0 1rem; /* Add padding to the body for small screens */
+  }
+
+  /* Adjust input field */
+  input {
+    font-size: 1rem; /* Increase font size for mobile readability */
+    width: 100%; /* Make input fields responsive */
+    padding: 0.75rem; /* Add padding for larger touch targets */
+  }
+
+  /* Custom button styles for mobile */
+  .btn {
+    padding: 0.75rem 1rem; /* Increase padding for better touch interaction */
+    font-size: 1rem; /* Larger font size */
+    width: 100%; /* Make buttons full width */
+  }
+
+  /* Adjust any card or container size */
+  .container {
+    padding: 1rem; /* Add padding around containers */
+  }
+
+  /* Customize heading for mobile */
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5rem; /* Adjust heading size for readability */
+    line-height: 1.2;  /* Add proper line spacing */
+  }
+
+  /* Adjust any flex layout */
+  .flex-row {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Additional styles for very small screens (phones) */
+  input {
+    font-size: 0.9rem; /* Adjust font size for very small screens */
+  }
+
+  h1 {
+    font-size: 1.25rem; /* Adjust heading size further for phones */
+  }
+  
+  .container {
+    padding: 0.5rem; /* Less padding for very small devices */
+  }
+
+  .btn {
+    font-size: 0.9rem; /* Slightly reduce button font size */
+  }
+}
