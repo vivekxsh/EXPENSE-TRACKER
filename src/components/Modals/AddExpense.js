@@ -75,6 +75,7 @@ function AddExpenseModal({
             <Select.Option value="food">Food</Select.Option>
             <Select.Option value="education">Education</Select.Option>
             <Select.Option value="office">Office</Select.Option>
+            <Select.Option value="other">other</Select.Option>
             {/* Add more tags here */}
           </Select>
         </Form.Item>
